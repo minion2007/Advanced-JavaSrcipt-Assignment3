@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Object Properties</title>
+</head>
+<body>
+    <p id="para"> Hi please note my contact details for help needed</p>
+  <script>
+    var person = {firstName:"Mike", lastName:"Shallenberger", email:"shall@gmail.com", phone:"7209876234"};
+    var para1= document.createElement("p");
+    para1.setAttribute("id", "para1");
+    document.body.appendChild(para1);
+    var details = document.createTextNode(person.firstName+" "+person.lastName+" "+person.email+" "+person.phone);
+    para1.appendChild(details);
+  </script>
+</body>
+</html>
